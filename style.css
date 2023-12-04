@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@900&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@900&family=Lora&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+  }
+
+.showMain{
+    display:grid; /**************** grid *******************/
+    width: 100%;
+    height: 100%;    
+    background: linear-gradient(to right, rgb(0, 0, 98) 10%,
+     rgb(0, 0, 17) 40%);
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#mainHeader{
+    font-family: 'Secular One';
+    color: rgba(255, 255, 255, 1);
+    grid-column: 7 /span 9;
+    grid-row: 1;
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: .1rem;
+    margin-top: 1rem;
+    margin-left: 3rem;
+}
+
+#mainText{
+    color: rgba(255, 208, 41, 1);
+    font-weight: lighter;
+    grid-column: 8 / span 9 ;
+    grid-row: 1;
+    grid-row: 1;
+    letter-spacing: .4rem;
+    text-align: center;
+    margin-top: 4.5rem;
+    margin-left: 2.1rem;
+}
+
+#theSun{
+    margin-left: -12rem;
+    background-color: rgba(255, 208, 41, 1);
+    grid-column: 1 /1;
+    grid-row: 1 / 4;
+    border-radius: 50%;
+    width: 15rem;
+    height: 35rem;
+}
+
+#theMercury{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    background-color: rgba(136, 136, 136, 1);
+    grid-column: 2;
+    grid-row: 2;
+    border-radius: 50%;
+    height: 1rem;
+    width: 1rem;
+    margin-left: 2rem;
+    margin-right: 4rem;
+}
+
+#theVenus{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    background-color: rgba(231, 205, 205, 1);
+    grid-column: 3;
+    grid-row: 2;
+    border-radius: 50%;
+    height: 1.8rem;
+    width: 1.8rem;
+    margin-left: 2rem;
+    margin-right: 4rem;
+}
+
+#theEarth{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    background-color: rgba(66, 142, 212, 1);
+    grid-column: 4;
+    grid-row: 2;
+    border-radius: 50%;
+    height: 1.8rem;
+    width: 1.8rem;
+    margin-left: 2rem;
+    margin-right: 4rem;
+}
+
+#theMars{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    background-color: rgba(239, 95, 95, 1);
+    grid-column: 5;
+    grid-row: 2;
+    border-radius: 50%;
+    height: 1rem;
+    width: 1rem;
+    margin-right: 4rem;
+}
+
+#theJupiter{
+    margin: 0 2rem 0rem 0;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    background-color: rgba(226, 148, 104, 1);
+    grid-column: 6;
+    grid-row: 2;
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+    margin-right: 4rem;
+}
+
+#theSaturn{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    background-color: rgba(199, 170, 114, 1);
+    grid-column: 7;
+    grid-row: 2;
+    border-radius: 50%;
+    height: 8rem;
+    width: 8rem;
+    margin-left: -3rem;
+}
+
+#saturnRing{
+    align-self: center;
+    width: 13rem;
+    height: 0.4rem;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 100%;
+    rotate: -30deg;
+    grid-column: 7;
+    grid-row: 2;
+    margin-left: -3rem;
+}
+
+#theUranus{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    background-color: 
+    rgba(201, 212, 241, 1);
+    grid-column: 8;
+    grid-row: 2;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    margin-left: -2rem;
+}
+
+#theNeptune{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    background-color: rgba(122, 145, 167, 1);
+    grid-column: 9;
+    grid-row: 2;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    margin-left: -2rem;
+}
+
+/***** The Hover *****/
+/***** The Hover *****/
+#theSun:hover{
+    transform: scale(1.1);
+    box-shadow: 18px 8px 10px rgba(255, 208, 41, 1);
+    cursor:pointer;
+}
+
+#blueSun:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#theMercury:hover, #theVenus:hover, #theEarth:hover, #theMars:hover {
+    transform: scale(3);
+    box-shadow: 1px 1px 15px #ffef10;
+    cursor:pointer;
+}
+
+#theJupiter:hover, #theSaturn:hover, #theUranus:hover, #theNeptune:hover{
+    cursor:pointer;
+    transform: scale(1.5);
+    box-shadow: 1px 1px 30px #ffef10;
+}
+
+#backToSolaris:hover{
+    transform: scale(1.2);
+    background-color: rgba(250, 209, 61, 0.271);
+    color: #fff;
+    cursor:pointer;
+}
+
+/***** SHOW AND HIDE *****/
+/***** SHOW AND HIDE *****/
+.showInfo{
+    display: flex;
+    background: linear-gradient(to right, rgb(0, 0, 77) 12%, 
+    rgb(0, 0, 63) 20%,rgb(0, 0, 17) 50%);
+}
+
+.hide{
+    display: none;
+    background:none
+}
+
+/* The Stars */
+/* The Stars */
+.stars {/*Täker hela bakgrunden*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+  
+.stars {
+    rotate: 4deg;
+    margin-left: 5.5rem;
+    background-image: 
+    radial-gradient(1px 1.7px at 10px 90px, #ffffff, rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 50px 160px, #ffffff, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 90px 40px, #fff, rgba(0,0,0,0)),
+    radial-gradient(3px 3px at 160px 120px, #ddd, rgba(0,0,0,0));
+    background-size: 216px 220px;
+    opacity: 0.8;
+    animation-name: opacity;
+    animation-duration: 10s;
+    animation-iteration-count: 100;
+}
+@keyframes opacity {
+    0%   {opacity: 0.8;}
+    10%  {opacity: 0.7;}
+    20%  {opacity: 0.5;}
+    30%   {opacity: 0.8;}
+    40%  {opacity:0.5 ;}
+    50%  {opacity:0.8 ;}
+    60%   {opacity:0.7 ;}
+    70%  {opacity:0.5 ;}
+    80%  {opacity:0.8;}
+    90%   {opacity:0.9 ;}
+    100%  {opacity:0.5 ;}
+}
+
+/* The Blue sun */
+#blueSun{
+    margin-top: -3rem;
+    margin-left: -21rem;
+    background-color: rgba(66,142,212);
+    grid-column: 1 /1;
+    grid-row: 1 / 4;
+    border-radius: 50%;
+    width: 25rem;
+    height: 41rem;
+    box-shadow: 35px 0px 2.5px rgba(28,46,95), 
+    70px 0px 2.5px rgba(26, 36, 80, 0.766);
+}
+
+#textContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, auto);
+    margin: auto auto;
+    width: 40rem;
+    height: 35rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* Planeten info */
+#planetName{
+    font-family: 'Secular One',serif;
+    font-size: xx-large;
+    letter-spacing: 0.4rem;
+    color: rgba(255, 255, 255, 1);
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: -1rem;
+}
+
+#latinName{
+    font-family: 'Lora', serif;
+    color:rgba(255, 208, 41, 1);
+    grid-column: 1;
+    grid-row: 2;
+    letter-spacing: .5rem;
+    margin-top: -1rem;
+}
+
+#planetText{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: small;
+    font-weight: lighter;
+    letter-spacing: .1rem;
+    color: rgba(255, 255, 255, 1);
+    grid-column: 1/3;
+    grid-row: 3/5;
+}
+
+/* Linjerna */
+#lineUp{
+    margin-top: .5rem;
+    grid-column: 1/span 2;
+    grid-row: 6;
+    height: .1rem;
+    background-color: rgba(255, 255, 255, 0.2)
+}
+
+#lineDown{
+    grid-column: 1/span 2;
+    grid-row: 10;
+    height: .1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 5rem;
+}
+
+/* Omkrets info */
+#circumHeader{
+    font-family: 'Secular One';
+    font-weight: lighter;
+    font-size: .9rem;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 6;
+    margin-top: 1rem;
+}
+
+#circumInfo{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: .9rem;
+    color: rgba(255, 255, 255, 1);
+    grid-column: 1;
+    grid-row: 7;
+}
+
+/* Distans från solen */
+#distanceHeader{
+    font-family: 'Secular One';
+    font-weight: lighter;
+    font-size: .9rem;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+    grid-column: 2;
+    grid-row: 6;
+    margin-top: 1rem;
+}
+
+#distanceInfo{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: .9rem;
+    color: rgba(255, 255, 255, 1);
+    grid-column: 2;
+    grid-row: 7;
+}
+
+/* Max temperatur */
+#maxTempHeader{
+    font-family: 'Secular One';
+    font-weight: lighter;
+    font-size: .9rem;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 8;
+}
+
+#maxTempInfo{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: .9rem;
+    color: rgba(255, 255, 255, 1);
+    grid-column: 1;
+    grid-row: 9;
+    margin-top: -.5rem;
+}
+
+/* Min temperatur */
+#minTempHeader{
+    font-family: 'Secular One';
+    font-weight: lighter;
+    font-size: .9rem;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+    grid-column: 2;
+    grid-row: 8;
+}
+
+#minTempInfo{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: .9rem;
+    color: rgba(255, 255, 255, 1);
+    grid-column: 2;
+    grid-row: 9;
+    margin-top: -.5rem;
+}
+
+/* Månar */
+#moonsHeader{
+    font-family: 'Secular One';
+    font-weight: lighter;
+    font-size: .9rem;
+    color: rgba(255, 255, 255, 1);
+    grid-column: 1;
+    grid-row: 10;
+    margin-top: 1rem;
+}
+
+#moonsInfo{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: .9rem;
+    color: rgba(255, 255, 255, 1);
+    grid-column: 1 /span 2;
+    grid-row: 10;
+    margin-top: 2.5rem;
+    margin-bottom: .5rem;
+}
+
+#backToSolaris{
+    font-family: 'Roboto Condensed', sans-serif;
+    border-style:none;
+    margin: auto auto;
+    position: fixed;
+    top: 3%;
+    right: 3%;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+    font-weight: bold;
+    background-color: rgba(250, 209, 61, 0.333);
+    color: rgba(255, 208, 41, 1);
+    animation-name: flash;
+    animation-duration: 10s;
+    animation-delay: 4s;
+    animation-iteration-count: 100;
+}
+
+@keyframes flash {
+    0%   {box-shadow: 0px 0px 98px 1px  rgba(255, 208, 41, 1)}
+    10%  {box-shadow: 0px 0px 98px 6px  rgba(255, 208, 41, 1)}
+    20%  {box-shadow: 0px 0px 98px 9px rgba(255, 208, 41, 1);}
+    30%   {box-shadow: 0px 0px 98px 7px  rgba(255, 208, 41, 1)}
+    40%  {box-shadow: 0px 0px 98px 3px  rgba(255, 208, 41, 1)}
+    50%  {box-shadow: 0px 0px 98px 8px rgba(255, 208, 41, 1);}
+    60%   {box-shadow: 0px 0px 98px 3px  rgba(255, 208, 41, 1)}
+    70%  {box-shadow: 0px 0px 98px 6px  rgba(255, 208, 41, 1)}
+    80%  {box-shadow: 0px 0px 98px 10px rgba(255, 208, 41, 1);}
+    90%   {box-shadow: 0px 0px 98px 6px  rgba(255, 208, 41, 1)}
+    100%  {box-shadow: 0px 0px 98px 9px  rgba(255, 208, 41, 1)}
+}
